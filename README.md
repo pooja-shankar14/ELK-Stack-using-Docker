@@ -60,7 +60,7 @@ The machines on the internal network are not exposed to the public Internet.
 Only the Jumpbox machine can accept connections from the Internet. Access to this machine is only allowed from the following IP addresses.
 
 **Add whitelisted IP addresses_**
-203.185.218.136
+203.x.y.z (My PC)
 
 This whitelisted address will connect to the Jumphost machine via SSH connection on port 22. 
 
@@ -72,11 +72,11 @@ A summary of the access policies in place can be found in the table below.
 
 | Name       | Publicly Accessible                                     | Allowed IP Addresses     |
 |------------|---------------------------------------------------------|--------------------------|
-| Jump Box   | Yes but only allows my local workstation IP via port 22 | 203.185.218.136          |
+| Jump Box   | Yes but only allows my local workstation IP via port 22 | 203.x.y.x          |
 | Web-1      | No                                                      | 10.0.0.4                 |
 | Web-2      | No                                                      | 10.0.0.4                 |
 | Web-3      | No                                                      | 10.0.0.4                 |
-| ELK-server | Yes but only from local workstation IP via port 5601    | 203.185.218.136 (my PC)|
+| ELK-server | Yes but only from local workstation IP via port 5601    | 203.x.y.z (my PC)|
 
 ### Elk Configuration
 
